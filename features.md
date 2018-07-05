@@ -1,7 +1,7 @@
-﻿* Orte
+* Orte
 * Öffnungszeiten
 * price range
-* reservation
+* Reservation
 * cafe or restaurant
 * in der Nähe
 * Standort bestimmen
