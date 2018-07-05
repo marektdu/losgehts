@@ -6,3 +6,4 @@
 * in der Nähe
 * Standort bestimmen
 * Reisedauer
+* Kommentare positiv?
