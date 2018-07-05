@@ -5,4 +5,4 @@
 * cafe or restaurant
 * in der Nähe
 * Standort bestimmen
-* Reisedauern
+* Reisedauer
