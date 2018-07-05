@@ -1,4 +1,4 @@
-* Orte
+﻿* Orte
 * Öffnungszeiten
 * price range
 * reservation
@@ -6,4 +6,6 @@
 * in der Nähe
 * Standort bestimmen
 * Reisedauer
+
 * Kommentare positiv?
+
