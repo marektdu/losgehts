@@ -9,13 +9,18 @@ class Person():
         print("My name is ", self.first_name, self.second_name)
 
     def greet_inoffically(self):
-        print("Hallo", self.first_name)
+        return "Hallo " + self.first_name
 
     def greet_offically(self):
-        print("Sehr geehrte Frau/Sehr geehrter Herr", self.second_name)
+        return "Sehr geehrte Frau/Sehr geehrter Herr " + self.second_name
 
     def greet(self):
+        greetings = None
         if self.official:
-            self.greet_offically()
+            greetings = self.greet_offically()
         else:
-            self.greet_inoffically()
+            greetings = self.greet_inoffically()
+
+        print(greetings)
+
+        return greetings
