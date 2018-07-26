@@ -25,11 +25,11 @@ class TestGreetingMethods(unittest.TestCase):
         self.assertEqual (greet_value[0:5] ,"Hallo" )
 
 
-#class TestRestaurantFinder(unittest.TestCase):
-#
-#    def test_something(self):
-#
-#        self.assertTrue(False)
+class TestRestaurantFinder(unittest.TestCase):
+
+    def test_something(self):
+
+        self.assertTrue(False)
 
 
 
