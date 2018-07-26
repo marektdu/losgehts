@@ -6,9 +6,11 @@
 
 * Person (caner-erdem-enes)
 ** (x-y) kordinate
-** make request
+** get_coords()
+
+** make request??
 *** Number of persons
-** Duration
+*** Duration
 ** Make reservation
 
 
