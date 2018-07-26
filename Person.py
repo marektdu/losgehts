@@ -12,7 +12,7 @@ class Person():
 
 
 
-    #    Standort_1 = input("Fügen Sie ihre Standort ein")
+
 
     def get_coord(self):
 

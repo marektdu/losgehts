@@ -8,7 +8,7 @@
 ** (x-y) kordinate
 ** get_coords()
 
-** make request
+** make request??
 *** Number of persons
 *** Duration
 ** Make reservation
