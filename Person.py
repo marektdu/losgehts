@@ -10,7 +10,7 @@ class Person():
         self.x_coord = x_coord
         self.y_coord = y_coord
 
-
+# some comment
 
 
 
