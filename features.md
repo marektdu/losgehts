@@ -1,4 +1,35 @@
-﻿* Orte
+﻿* Restourants  (Sule-Ceyda-Tugba-elif)
+** (x-y) koordinate
+** Öffnungszeiten
+** Free Seats
+
+
+* Person (caner-erdem-enes)
+** (x-y) kordinate
+** make request
+*** Number of persons
+** Duration
+** Make reservation
+
+
+* RestourantsFinder (gani-hüseyin-asım)
+** Get restourants ramnge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* Orte
 * Öffnungszeiten
 * price range
 * Reservation
@@ -8,4 +39,6 @@
 * Reisedauer
 
 * Kommentare positiv?
+
+
 
