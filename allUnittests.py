@@ -19,9 +19,18 @@ class TestGreetingMethods(unittest.TestCase):
         user3.first_name="Enes"
         user3.second_name="Akay"
         user3.official =False
+        print (user3)
         greet_value = user3.greet()
 
-        self.assertEqual (greet_value [0:5] ,"Hallo" )
+        self.assertEqual (greet_value[0:5] ,"Hallo" )
+
+
+class TestRestaurantFinder(unittest.TestCase):
+
+    def test_something(self):
+
+        self.assertTrue(False)
+
 
 
 if __name__ == '''__main__''':

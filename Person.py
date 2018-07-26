@@ -19,7 +19,7 @@ class Person():
         if self.official:
            greeetings = self.greet_offically()
         else:
-            self.greet_inoffically()
+            greeetings = self.greet_inoffically()
             print(greeetings)
 
         return greeetings
