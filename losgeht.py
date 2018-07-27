@@ -1,38 +1,40 @@
 from math import sqrt
+import random
 
 import Person
 from Restaurants import Restaurant
 
 
 
-me=Person.Person()
-me.first_name="Ceyda"
-me.second_name="Günes"
-
-me.print_my_name()
-
-user2=Person.Person()
-user2.first_name="Erdem"
-user2.second_name="Cimenoglu"
-user2.print_my_name()
-
-user3=Person.Person()
-user3.first_name="Enes"
-user3.second_name="Akay"
-user3.official =False
-
-user2.greet()
-user3.greet()
+# me=Person.Person()
+# me.first_name="Ceyda"
+# me.second_name="Günes"
+#
+# me.print_my_name()
+#
+# user2=Person.Person()
+# user2.first_name="Erdem"
+# user2.second_name="Cimenoglu"
+# user2.print_my_name()
+#
+# user3=Person.Person()
+# user3.first_name="Enes"
+# user3.second_name="Akay"
+# user3.official =False
+#
+# user2.greet()
+# user3.greet()
 
 all_restaurants = []
+user_1 = Person.Person(first_name="Ceyda", second_name="Günes", x_coord=10., y_coord=12., range=100)
 
-def define_personen():
-
-    global all_personen
-
-    all_personen.append(Person(first_name="Ceyda", second_name="Günes", x_coord=10., y_coord=12., range=2000))
-#user2 = Person.Person(first_name="Erdem", second_name="Cimenoglu", x_coord=12., y_coord=13., range=3000)
-#user3 = Person.Person(first_name="Enes", second_name="Akay", x_coord=15., y_coord=20., range=1500)
+# def define_personen():
+#
+#     global all_personen
+#
+#  user_1 = Person(first_name="Ceyda", second_name="Günes", x_coord=10., y_coord=12., range=2000)
+# #user2 = Person.Person(first_name="Erdem", second_name="Cimenoglu", x_coord=12., y_coord=13., range=3000)
+# #user3 = Person.Person(first_name="Enes", second_name="Akay", x_coord=15., y_coord=20., range=1500)
 
 
 
@@ -72,8 +74,8 @@ def get_restaurants_in_range(all_restaurants, personal_coordinates, range):
     restaurants_in_range = []
 
     for rr in all_restaurants:
-        distance = distance(personal_coordinates, rr.coordinates)
-        if distance <= range:
+        dd = distance(personal_coordinates, rr.coordinates)
+        if dd <= range:
             restaurants_in_range.append(rr)
 
     return restaurants_in_range
@@ -86,7 +88,10 @@ def main():
 
     print_all_restaurant_information(all_restaurants)
 
+    restaurants_in_range =get_restaurants_in_range(all_restaurants=all_restaurants,personal_coordinates = (100,100),range=90)
+    the_restaurant_nr = int(random.uniform(0, len(restaurants_in_range) - 1))
 
+    print("your restautrant is:" , str(restaurants_in_range[the_restaurant_nr]))
 
 
 if __name__ == """__main__""":
