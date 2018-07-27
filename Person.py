@@ -20,6 +20,5 @@ class Person():
            greeetings = self.greet_offically()
         else:
             greeetings = self.greet_inoffically()
-            print(greeetings)
 
         return greeetings
