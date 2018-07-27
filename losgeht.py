@@ -27,6 +27,8 @@ user3.greet()
 
 all_restaurants = []
 
+
+
 def define_restaurants():
 
     global all_restaurants
@@ -35,13 +37,29 @@ def define_restaurants():
     all_restaurants.append(Restaurant(name="Pizzaria2", coordinates=(10, 113), openinghours=None, freeSeats=150))
 
 
-
-
-
 def print_all_restaurant_information( restaurant_list):
 
     for rr in restaurant_list:
         print (rr)
+
+def distance(point_1, point_2):
+
+    distance = sqrt((point_1[0] - point_2[0]) ** 2 +
+                    (point_1[1] - point_2[1]) ** 2 )
+
+    return distance
+
+
+def get_restaurants_in_range(all_restaurants, personal_coordinates, range):
+    restaurants_in_range = []
+
+    for rr in all_restaurants:
+        distance = distance(personal_coordinates, rr.coordinates)
+        if distance <= range:
+            restaurants_in_range.append(rr)
+
+    return restaurants_in_range
+
 
 def main():
 
@@ -51,12 +69,6 @@ def main():
     print_all_restaurant_information(all_restaurants)
 
 
-def distance(point_1, point_2):
-
-    distance = sqrt((point_1[0] - point_2[0]) ** 2 +
-                    (point_1[1] - point_2[1]) ** 2 )
-
-    return distance
 
 
 if __name__ == """__main__""":
@@ -67,45 +79,37 @@ if __name__ == """__main__""":
 
 #############
 
-def get_restaurants_in_range(all_restaurants):
-    for rr in all_restaurants:
-        point_2 = rr.
-    for point_2 in resturantlistesi.kordinat:
-        distance[ii] = distance(personalkordinat, point_2)
 
 
 #############
 
-ii=0
-for point_2 in resturantlistesi.kordinat :
-    distance[ii] = distance(personalkordinat , point_2)
 
 
 
-def bubble(badlist):
-    length = len(badlist-1)
-    unsorted = False
-
-    while not unsorted:
-        unsorted = True
-        for element in range(0 , length):
-            if badlist[element] > badlist[element - 1]:
-                unsorted = False
-                hold = badlist[element + 1]
-                badlist[element + 1] = badlist[element]
-                badlist[element] = hold
-
-    return badlist
-
-RankedList = bubble(distance)
-
-def ShowResturant(List):
-    length = len(List-1)
-
-    for sayac in range(0, length):
-        for sayac2 in range(0,length):
-            if RankedList(sayac) == distance[sayac2]:
-                ShowresturantList[sayac] = Resturant[sayac2]
-    return ShowResturantList
-
-ShowResturantList = ShowResturant(RankedList)
+# def bubble(badlist):
+#     length = len(badlist-1)
+#     unsorted = False
+#
+#     while not unsorted:
+#         unsorted = True
+#         for element in range(0 , length):
+#             if badlist[element] > badlist[element - 1]:
+#                 unsorted = False
+#                 hold = badlist[element + 1]
+#                 badlist[element + 1] = badlist[element]
+#                 badlist[element] = hold
+#
+#     return badlist
+#
+# RankedList = bubble(distance)
+#
+# def ShowResturant(List):
+#     length = len(List-1)
+#
+#     for sayac in range(0, length):
+#         for sayac2 in range(0,length):
+#             if RankedList(sayac) == distance[sayac2]:
+#                 ShowresturantList[sayac] = Resturant[sayac2]
+#     return ShowResturantList
+#
+# ShowResturantList = ShowResturant(RankedList)
