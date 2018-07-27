@@ -30,9 +30,21 @@ def distance(point_1, point_2):
     return distance
 
 
-sayac=0
+
+#############
+
+def get_restaurants_in_range(all_restaurants):
+    for rr in all_restaurants:
+        point_2 = rr.
+    for point_2 in resturantlistesi.kordinat:
+        distance[ii] = distance(personalkordinat, point_2)
+
+
+#############
+
+ii=0
 for point_2 in resturantlistesi.kordinat :
-    distance[sayac] = distance(personalkordinat , point_2)
+    distance[ii] = distance(personalkordinat , point_2)
 
 
 
