@@ -1,4 +1,7 @@
+from math import sqrt
+
 import Person
+
 
 me=Person.Person()
 me.first_name="Ceyda"
@@ -18,3 +21,10 @@ user3.official =False
 
 user2.greet()
 user3.greet()
+
+def distance(point_1, point_2):
+
+    distance = sqrt((point_1[0] - point_2[0]) ** 2 +
+                    (point_1[1] - point_2[1]) ** 2 )
+
+    return distance
