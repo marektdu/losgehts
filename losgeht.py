@@ -27,20 +27,29 @@ user3.greet()
 
 all_restaurants = []
 
-
-
 def define_restaurants():
 
     global all_restaurants
 
-    all_restaurants.append(Restaurant(name="Pizzaria", coordinates=(11, 12), openinghours=None, freeSeats=100))
-    all_restaurants.append(Restaurant(name="Pizzaria2", coordinates=(10, 113), openinghours=None, freeSeats=150))
+    all_restaurants.append(Restaurant(name="Pizzaria", coordinates=(5, 12), openinghours=None, freeSeats=100))
+    all_restaurants.append(Restaurant(name="Pizzaria2", coordinates=(35, 113), openinghours=None, freeSeats=80))
+    all_restaurants.append(Restaurant(name="Pizzaria3", coordinates=(22, 58), openinghours=None, freeSeats=90))
+    all_restaurants.append(Restaurant(name="Pizzaria4", coordinates=(17, 72), openinghours=None, freeSeats=120))
+    all_restaurants.append(Restaurant(name="Pizzaria5", coordinates=(15, 65), openinghours=None, freeSeats=30))
 
 
 def print_all_restaurant_information( restaurant_list):
 
     for rr in restaurant_list:
         print (rr)
+
+def main():
+
+    #load all data
+    define_restaurants()
+
+    print_all_restaurant_information(all_restaurants)
+
 
 def distance(point_1, point_2):
 
