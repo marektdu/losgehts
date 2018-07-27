@@ -1,4 +1,6 @@
 import Person
+from Restaurants import Restaurant
+
 
 me=Person.Person()
 me.first_name="Ceyda"
@@ -18,3 +20,31 @@ user3.official =False
 
 user2.greet()
 user3.greet()
+
+all_restaurants = []
+
+def define_restaurants():
+
+    global all_restaurants
+
+    all_restaurants.append(Restaurant(name="Pizzaria", coordinates=(11, 12), openinghours=None, freeSeats=100))
+    all_restaurants.append(Restaurant(name="Pizzaria2", coordinates=(10, 113), openinghours=None, freeSeats=150))
+
+
+
+
+
+def print_all_restaurant_information( restaurant_list):
+
+    for rr in restaurant_list:
+        print (rr)
+
+def main():
+
+    #load all data
+    define_restaurants()
+
+    print_all_restaurant_information(all_restaurants)
+
+if __name__ == """__main__""":
+    main()

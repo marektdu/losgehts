@@ -1,17 +1,18 @@
-class Restaurants():
+class Restaurant():
 
-    def __init__(self):
+    def __init__(self, name = None, coordinates = None, openinghours = None, freeSeats = None
+):
 
-        self.name = None
-        self.coordinates = None
-        self.openinghours = None
-        self.freeSeats = None
+        self.name = name
+        self.coordinates = coordinates
+        self.openinghours = openinghours
+        self.freeSeats = freeSeats
 
-    def print_information(self):
 
-#        list = [
 
-         print ("der Name von Restaurant : ",self.name,'\t', "Koordinaten : ",self.coordinates,'\t', "Oefnungszeiten : ",
-                self.openinghours,'\t', "Anzahl von frei Plaetze : ",self.freeSeats)
+    def __repr__(self):
+        ret = "der Name von Restaurant : " + self.name  +  " Koordinaten : " + str(self.coordinates)  #+  "Oefnungszeiten : " + self.openinghours +  "Anzahl von frei Plaetze : " + self.freeSeats
+
+        return ret
 
 

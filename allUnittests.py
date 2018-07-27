@@ -1,6 +1,6 @@
 import unittest
 import Person
-
+from Restaurants import Restaurant
 
 class TestGreetingMethods(unittest.TestCase):
 
@@ -19,7 +19,7 @@ class TestGreetingMethods(unittest.TestCase):
         user3.first_name="Enes"
         user3.second_name="Akay"
         user3.official =False
-        print (user3)
+
         greet_value = user3.greet()
 
         self.assertEqual (greet_value[0:5] ,"Hallo" )
@@ -31,7 +31,13 @@ class TestGreetingMethods(unittest.TestCase):
 #
 #        self.assertTrue(False)
 
+class TestRestaurant(unittest.TestCase):
 
+    def test_something(self):
+        myRestaurant = Restaurant("Pizzaria", (11, 12), (12.00, 22.00), 100)
+        print(myRestaurant)
+
+        self.assertEqual(myRestaurant.freeSeats, 100)
 
 if __name__ == '''__main__''':
     unittest.main()
