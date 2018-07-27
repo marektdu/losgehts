@@ -24,8 +24,17 @@ user3.official =False
 user2.greet()
 user3.greet()
 
-
 all_restaurants = []
+
+def define_personen():
+
+    global all_personen
+
+    all_personen.append(Person(first_name="Ceyda", second_name="Günes", x_coord=10., y_coord=12., range=2000))
+#user2 = Person.Person(first_name="Erdem", second_name="Cimenoglu", x_coord=12., y_coord=13., range=3000)
+#user3 = Person.Person(first_name="Enes", second_name="Akay", x_coord=15., y_coord=20., range=1500)
+
+
 
 def define_restaurants():
 
